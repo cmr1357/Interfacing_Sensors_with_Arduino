@@ -1,1 +1,30 @@
+# IR Infrared Obstacle Avoidance Sensor With Arduino #
 
+Hi Friends, Today we will be discussing the IR obstacle avoidance sensor. 
+As the name, this module uses Infrared technology to detect obstacles.
+
+Now, What is Infrared Technology?
+
+IR technology is a technology that uses IR radiation to convey information. Infrared radiation(IR), is sometimes referred to as a region of the electromagnetic radiation spectrum where wavelengths range from about 700 nanometers to 1 millimeter.
+Infrared waves are longer than those of visible light but shorter than those of radio waves. 
+
+## IR sensor Module ##
+
+IR sensor module has a built-in IR transmitter and IR receiver. IR transmitter sends IR radiation and the receiver detects the presence of reflected IR energy. The module has a built-in potentiometer to adjust the sensitivity or detection range. The sensor has a very good and stable response even in ambient light or in complete darkness.
+The IR sensor module is an active low device Which means the sensor normally outputs a HIGH signal on its signal line when no object is in front of it. When an object comes in front of it, it outputs a LOW signal(0V). 
+
+## Working Principle ##
+
+The IR transmitter sends an IR signal that when any obstacle detects on its way the IR light will reflect and the Ir receiver captures this reflected signal. When the surface is absorbent the IR signal isn't reflected and the object cannot be detected by the sensor. The surface of an object is really important when it comes to how infrared radiation is emitted. That is black surface will absorb the light and the light surface will reflect the IR rays.
+
+
+## Connections ##
+
+1. Connect the VCC of the sensor to VCC of Arduino.
+2. Connect GND of the sensor to GND of the Arduino.
+3. Connect the output pin of the sensor module to pin 3 of the Arduino board.
+4. Connect another LED to pin 13 of Arduino to see the output.
+
+## Code ##
+
+Please refer to the attached code with the explanation.
