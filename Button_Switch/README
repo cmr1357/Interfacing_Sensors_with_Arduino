@@ -1,1 +1,31 @@
 
+# Button_switch With Arduino #
+
+Hi Friends, Today we will be discussing.  How to interface pushbutton with Arduino. 
+ 
+## Pushbutton working Principle ##
+
+A pushbutton is a small sealed mechanism that completes an electric circuit when we press on it. When we push on it, a small metal spring inside makes contact with two wires, allowing electricity to flow.
+When it is off, the spring retracts, contact is interrupted, and the current won't flow.
+The push button can be explained as a momentary switch,  It works when we press them, like the buttons on a phone, or calculator. They can be divided into normally -on and normally-off.
+
+Normally -off
+
+With the normally-off switch, there is no connection till we push the button.
+
+Normally-on
+
+Here the switches conduct normally but interrupt the circuit when we press on it.
+
+## Connections ##
+
+The push button we are using has four legs that say 11,12,21, and 22. 11 and 12 are internally connected or Normally closed similarly 21 and 22 are internally connected or normally closed. 
+When we press a button 11,12,22,21 all the four points will connect and the current flows.
+1. Connect one end of the push button say (11) to 5v in Arduino.
+2. Connect the other end, either 22 or 21 to any digital pin of Arduino, in the code we connected the one end of the push button to pin2 of Arduino.
+3. Connect the same end 22 or 21 to a resistor and ground the other end of the resistor. Connecting a resistor to the ground from the same point is very significant and is called pulldown otherwise a microcontroller ensures a definite state of 0 or 1.
+4. Connect another LED to pin 13 of Arduino to see the output.
+
+## Code ##
+
+Please refer to the attached code with the explanation.
