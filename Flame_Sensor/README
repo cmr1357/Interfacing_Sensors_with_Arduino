@@ -16,8 +16,9 @@ When fire burns it emits a small amount of Infra-red light, this light will be r
 
 1. Connect the VCC of the sensor to 5v of Arduino.
 2. Connect GND of the sensor to GND of the Arduino.
-3. Dout to any digital pins.
+3. Aout to analog pin A0.
 
 ## Code ##
+
 
 Please refer to the attached code with the explanation.
