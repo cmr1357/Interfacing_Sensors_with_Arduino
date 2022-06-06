@@ -1,1 +1,32 @@
+# Interfacing Joystick With Arduino #
 
+Hi Friends, Today we will be discussing how to interface Joystick to Arduino. 
+Yes, the first thing that comes to our mind listening to the word Joystick is the game controller. Yes, it is the same and can be used for gaming purposes. 
+
+What is a Joystick?
+
+It is a device that translates our hand movement into an electrical signal, and the movements are converted by the computational unit into entirely mathematical, in other words, the joystick translates entirely physical movements.
+
+## Thumb Joystick Module ##
+
+Thumb Joystick Module. We have the Ground pin, Vcc, and VRx gives a readout of the joystick in the horizontal direction(X-coordinate) i.e. how far left and right the joystick is pushed.
+VRY gives a readout of the joystick in the vertical direction (y-coordinate) i.e. how far up and down the joystick is pushed.
+and SW is the output from the pushbutton. It's normally open, meaning the digital readout from the SW pin will be HIGH. When the button is pushed, it will connect to GND, giving output LOW.
+
+## Working Principle ##
+
+The Joystick is nothing but a combination of two potentiometers for the X and Y plane respectively. 
+ The potentiometer is a variable resistor. As we move the joystick the value of resistance of both the potentiometer changes. This change, in turn, gives us values along the x and y axes.
+The Joystick gives out an analog input that is voltage varying in the range of 0 and 5v. By default, the joystick will give a value in the range of 400-600 and the value will increase or decrease as we move the joystick around.
+
+## Connections ##
+
+1. Connect the VCC of the sensor to 5v of Arduino.
+2. Connect GND of the sensor to GND of the Arduino.
+3. Connect the VRX to A0 pin of Arduino.
+4. Connect the VRy to A1 pin of Arduino.
+5. Connect the SW to digital pin 2 of Arduino.
+
+## Code ##
+
+Please refer to the attached code with the explanation.
