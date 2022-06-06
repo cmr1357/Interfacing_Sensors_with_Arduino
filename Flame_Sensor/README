@@ -1,1 +1,23 @@
+# Flame Sensor interfacing With Arduino #
 
+Hi Friends, Today we will be discussing about the flame sensor. 
+As the name this little sensors are used to detect fire in a particular range hence can be used in projects like fire alarms.
+
+## Flame sensor Module ##
+
+Flame sensor module has a built-in IR receiver, resistor, capacitor, potentiometer, and comparator LM393 . The built-in potentiometer in the sensor is used to adjust the sensitivity. This module can detect infrared light with a wavelength ranging from 700nm to 1000nm. 
+
+## Working Principle ##
+
+When fire burns it emits a small amount of Infra-red light, this light will be received by the photodiode, which is a high speed and high sensitive NPN silicon phototransistor that can detect infrared light with a wavelength ranging from 700nm to 1000nm and detection angle is about 60 degree. Then the OP-Amp will check for change in voltage across the IR Receiver. If a fire is detected the output pin (D0) will give 0v(LOW), and if no fire the output pin will be 5v.
+
+
+## Connections ##
+
+1. Connect the VCC of the sensor to 5v of Arduino.
+2. Connect GND of the sensor to GND of the Arduino.
+3. Dout to any digital pins.
+
+## Code ##
+
+Please refer to the attached code with the explanation.
