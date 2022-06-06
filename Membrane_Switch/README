@@ -1,1 +1,26 @@
 
+# Interfacing Membrane switch with Arduino #
+
+Hi Friends, Today we will be discussing how to interface membrane switch with arduino.
+
+Now, What is a Membrane switch?
+
+A membrane switch or a keypad comes in wide variety of shapes and sizes. The most common size are 3 x3 and 4x4x .
+We can get keypads with words, letters and numbers written on the keys. and the keypad allows us to interact with a microcontroller.
+ 
+## Working Principle ##
+
+A membrane keypad is a matrix consisting of rows and columns. Each key is assigned to a certain row and column.
+
+On a 16 button keypad we have 4 rows and 4 columns. The first key would make a link between Row1 and column1 and so on
+The basic working principle of the membrane switch is when the top overlay button is not pressed, the switch is in the open state, its upper and lower circuit contacts are disconnected, 
+the isolation layer between the upper and lower circuits play a role in isolation; 
+when the top layer button is pressed, the contacts of the upper circuit down into the lower circuit, two circuit contacts touch, the conduction of the circuit to the external connection instrumnet to the signal. When th ebutton is released, the contact point of the upper circuit bounces back, the circuit is disconnected, and the loop triggers a signal.
+
+## Connections ##
+
+1.Digital pins 9, 8, 7, and 6 are connected to Row pins of the membrane switch and the Column pins are connected to digital pins 5, 4, 3, 2 of Arduino.
+
+## Code ##
+
+Please refer to the attached code with the explanation.
