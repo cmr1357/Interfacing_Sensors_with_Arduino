@@ -1,17 +1,17 @@
 #Laser emit Module #
 
 Hi Friends, Today we will be discussing the Laser emit module. 
-As the name, this module uses 100mW laser beam. This module can be used with photoresistor module to perform basic remote signaling.
+As the name, this module uses 100mW laser beam. This module can be used with a photoresistor module to perform basic remote signaling.
 
-Now, What is LASER?
+Now, What is Laser?
 
-LASER stands for Light Amplification by Stimulated Emission of Radiation. A laser is an unusual light source. It is quite different from a light bulb or a flash light. Laser 
-A laser do not occur in nature. We humans created this special type of light. Laser produce a narrow beam of light in which all of the light waves have very similar wavelengths. The laser's light waves travel together with their peaks all lined up, or in phase. This is why laser beam are very narrow, very bright, and can be focused into very tiny spot.
-Because laser light stays focused and does not spread out much , laser beams can travel very long distances. They can also concentrate a lot of energy on a very small area.
+LASER stands for Light Amplification by Stimulated Emission of Radiation. A laser is an unusual light source. It is quite different from a light bulb or a flashlight. Laser 
+A laser does not occur in nature. We, humans, created this special type of light. The laser produces a narrow beam of light in which all of the light waves have very similar wavelengths. The laser's light waves travel together with their peaks all lined up, or in phase. This is why laser beams are very narrow, very bright, and can be focused into a very tiny spot.
+Because laser light stays focused and does not spread out much, laser beams can travel very long distances. They can also concentrate a lot of energy on a very small area.
 
 ## LASER Module ##
 
-The laser Module has three pins Signal labeled as S, GND labeled as - and the middle pin indicates +5v.
+The laser module has three pins Signal labeled as S, GND labeled as - and the middle pin indicates +5v.
 
 ## Working Principle ##
 
@@ -19,27 +19,26 @@ The working of a laser diode takes place in three main steps.
 
 ### Energy Absorption ###
 
-The LAser diode consists of a p-n junction where holes and electrons exist.When a certain voltage is applied at the p-n junction, the electrons absorb energy and they transistion to a higher energy level 
-Holes are formed at the original position of the excited electron. The electron stay in this excited state without recombining with holes for a very small duration of time, termed as " recombination time" or "upper-state lifetime". The recombination time is about a nanosecond for most laser diodes.
+The Laser diode consists of a p-n junction where holes and electrons exist. When a certain voltage is applied at the p-n junction, the electrons absorb energy and transition to a higher energy level. 
+Holes are formed at the original position of the excited electron. The electron stays in this excited state without recombining with holes for a very small duration of time, termed " recombination time" or "upper-state lifetime". The recombination time is about a nanosecond for most laser diodes.
 
 ### Spontaneous Emission ###
 
-After the upper-state lifetime of excited electrons, they recombine with holes. As the electrons fall from higher energy level to a lower energy level , 
-the difference in energy is converted into photons or electromagnetic radiation. This same process is used ce light in LEDs. 
+After the upper-state lifetime of excited electrons, they recombine with holes. As the electrons fall from a higher energy level to a lower energy level, 
+the difference in energy is converted into photons or electromagnetic radiation. This same process is used light in LEDs. 
 The energy of the emitted photon is used to produce light in LEDs. The energy of the emitted photon is given by the difference between the two energy levels.
 
 ###Stimulated Emission
 
-We need more coherent photons from the laser diode than the ones emitte through the process of spontaneous emission.
-A partially reflecting mirror is used on either side of the diode so that the photons relased from spontaneous emission are traped in the p-n junction until their concentraction reaches a threshold value. Tese trapped photons stimulated the excited electrons to recombine with holes even before their recombination time. This results ini the release of more photons that are in exact phase with the inintial photons and so the output gets ampified. Once the photon concentraction goes above a threshold, they escape from the partially reflecting mirrors, resulting in a bright monochromatic coherent light.
+We need more coherent photons from the laser diode than the ones emitted through the process of spontaneous emission.
+A partially reflecting mirror is used on either side of the diode so that the photons released from spontaneous emission are trapped in the p-n junction until their concentration reaches a threshold value. These trapped photons stimulated the excited electrons to recombine with holes even before their recombination time. This results in the release of more photons that are in the exact phase with the initial photons and so the output gets amplified. Once the photon concentration goes above a threshold, they escape from the partially reflecting mirrors, resulting in a bright monochromatic coherent light.
 
 
 ## Connections ##
 
-1. Connect the VCC of the sensor to VCC of Arduino.
-2. Connect GND of the sensor to GND of the Arduino.
-3. Connect the output pin of the sensor module to pin 3 of the Arduino board.
-4. Connect another LED to pin 13 of Arduino to see the output.
+1. Connect the +5v to +5v of Arduino.
+2. Connect GND of the sensor to the GND of the Arduino.
+3. Connect the signal pin to Digital Pin 7 of the Arduino.
 
 ## Code ##
 
