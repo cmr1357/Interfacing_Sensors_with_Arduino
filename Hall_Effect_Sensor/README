@@ -1,34 +1,34 @@
 # Interfacing Hall Effect Sensor With Arduino #
 
 Hi Friends, Today we will be discussing the Hall Effect sensor. 
-The hall effect sensor can be found in many applications it can be found in vehicles as speed sensor, switches, MEMS Compasses. Proximity Sensors.
-
+The hall effect sensor can be found in many applications it can be found in vehicles such as speed sensors, switches, and MEMS Compasses. Proximity Sensors.
 
 Now, What is the hall effect?
 
-Hall effect is the most common method of measuring magnetic field, Consider we have a thin conducting plate and we a battery to it so that current can flow through it.
-The charge carries flow straight from one side of the plate to other . When we place a magnetic near the Conducting plate 
-It will disturbe the straight flow of current carriers due to a force called Lorance force and the electrongs get deflect in one side and the potrons deflect to the other side
-and if we measure the voltage across he plate we will get some measurable voltage from it and the effcect of getting a measurable voltage in this case is called a Hall effect 
+Hall effect is the most common method of measuring the magnetic field, Consider we have a thin conducting plate and we add a battery to it so that current can flow through it.
+The charge carries flow straight from one side of the plate to the other. When we place a magnetic near the conducting plate 
+It will disturb the straight flow of current carriers due to a force called Lorance force and the electrons get deflected on one side and the patrons deflect to the other side
+and if we measure the voltage across the plate we will get some measurable voltage from it and the effect of getting a measurable voltage, in this case, is called a Hall effect 
 and is discovered by Edvin Hall.
-There are two types of Hall effect sensor one produce Analog output and the other produce Diggital output.
+There are two types of Hall effect sensor one produce Analog output and the other produce Digital output.
 
-## IR sensor Module ##
+## Hall Effect sensor Module ##
 
-IR sensor module has a built-in IR transmitter and IR receiver. IR transmitter sends IR radiation and the receiver detects the presence of reflected IR energy. The module has a built-in potentiometer to adjust the sensitivity or detection range. The sensor has a very good and stable response even in ambient light or in complete darkness.
-The IR sensor module is an active low device Which means the sensor normally outputs a HIGH signal on its signal line when no object is in front of it. When an object comes in front of it, it outputs a LOW signal(0V). 
+The hall effect sensor module includes a hall effect sensor called, which can produce a digital and analog output. 
+The potentiometer here can change the sensitivity of the output. The digital output can be used as a switch near a magnet, and the analog output can be used to measure the polarity and relative strength of a magnetic field.
 
 ## Working Principle ##
 
-The Hall effect sensor worked on the principle of Hall effect. The Hall effect sensor produce small hall voltage 
-so it is usually manufactured using small build in High gain Amplifier. The Analog sensor composed of High gain Amplifier , a voltage regulator 
-The measured Analog voltage is proportional to the Hall volage. 
+The Hall effect sensor worked on the principle of the Hall effect. The Hall effect sensor produces a small hall voltage 
+so it is usually manufactured using a small build-in High gain Amplifier. The Analog sensor is composed of High gain Amplifier and a voltage regulator. 
+The measured analog voltage is proportional to the Hall voltage. 
+
 ## Connections ##
 
 1. Connect the VCC of the sensor to VCC of Arduino.
 2. Connect GND of the sensor to GND of the Arduino.
-3. Connect the output pin of the sensor module to pin 3 of the Arduino board.
-4. Connect another LED to pin 13 of Arduino to see the output.
+3. Connect the D0 of the sensor module to pin 3 of the Arduino board.
+4. Connect A0 of the sensor module to A0 pin of Arduino.
 
 ## Code ##
 
